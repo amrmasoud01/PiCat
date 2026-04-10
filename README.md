@@ -1,4 +1,4 @@
-# 🐈‍⬛ Bastet-ROS (أو اكتب الاسم اللي اخترته هنا)
+# 🐈‍⬛ Bastet-ROS (PiCat)
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![ROS Version](https://img.shields.io/badge/ROS-Noetic%20%7C%20Humble-green.svg)
@@ -36,9 +36,4 @@
 ### Prerequisites
 Ensure your Raspberry Pi is running Ubuntu and has ROS installed. 
 
-### Installation
 
-1. Clone the repository into your catkin/colcon workspace:
-   ```bash
-   git clone [https://github.com/YourUsername/Bastet-ROS.git](https://github.com/YourUsername/Bastet-ROS.git)
-   cd Bastet-ROS
