@@ -42,7 +42,7 @@ PiCat/
 ├── Media/                      # Project images, videos, and diagrams
 ├── Docs/                       # University reports and assembly guides
 └── README.md                   # Project documentation
-
+```
 ---
 
 ## 🚀 Installation & Setup
