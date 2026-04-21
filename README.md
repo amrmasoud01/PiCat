@@ -151,7 +151,7 @@ If you prefer a graphical interface to interact with the Raspberry Pi:
 4. Connect and log in (Default Username: pi, Password: raspberry).
 5. Open the terminal and run the commands from Method A.
 
-### 2. 2. Connect the Client (Remote)
+### 2. Connect the Client (Remote)
 * **Via PC:** Open the PC GUI, enter the Pi's IP address, and click Connect.
 * **Via Mobile:** Open the PiCat App, enter the IP, and use the on-screen joysticks to move.
 ---
