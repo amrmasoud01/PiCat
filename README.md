@@ -14,7 +14,37 @@ If you want to start controlling **PiCat** immediately without setting up the so
 
 ---
 
+## 🌟 Features & Functions
+PiCat is packed with dynamic movements and smart capabilities powered by the Raspberry Pi and onboard sensors.
+
+### 🦾 Kinematic Features (Movements)
+The robot's 13 degrees of freedom allow it to move fluidly like a real animal.
+
+![PiCat Features](media/features.webp)
+
+* **Crawling & Walking:** Omni-directional walking capabilities.
+* **Posture Adjustment:** Move the body up, down, forward, and backward while the paws stay firmly planted.
+* **3D Twisting:** Roll, pitch, and yaw body twists to simulate feline flexibility.
+
+### 🧠 Smart Functions (Sensors & AI)
+Beyond basic movements, PiCat can interact with its environment.
+
+![PiCat Functions](media/functions.webp)
+
+* **Self-Balancing:** Uses the MPU6050 Gyroscope/Accelerometer to maintain stability on uneven surfaces.
+* **Computer Vision:** Capable of Face Recognition and Object/Color Tracking (e.g., tracing a red ball) using OpenCV.
+* **Real-Time Video:** Streams live camera feed directly to the control client.
+* **Distance Measurement:** Uses the Ultrasonic sensor to detect obstacles (up to 10cm accuracy).
+* **Interactive Feedback:** Features programmable RGB LEDs for status indication and a Buzzer for audio alerts.
+* **Head Articulation:** Multi-axis head movements (look up, down, left, right).
+* **Cross-Platform Client:** Fully controllable via PC GUI or Mobile App over Wi-Fi.
+
+---
+
 ## 🛠️ Hardware Components
+
+![hardware components](media/hardware components.jpg)
+
 * **Controller:** Raspberry Pi (3B+ / 4 Recommended)
 * **Shield:** Freenove Robot Shield for Raspberry Pi
 * **Actuators:** 13x Servo Motors (Legs and Head movement)
