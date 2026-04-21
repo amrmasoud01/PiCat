@@ -52,27 +52,6 @@ Beyond basic movements, PiCat can interact with its environment.
 
 ---
 
-## 📂 Repository Structure
-We have organized the repository to be clean and modular, focusing on the essential files for operation:
-
-```text
-PiCat/
-├── Apps/                       # Pre-compiled binaries for immediate use
-│   ├── Mobile/                 # Android APK
-│   └── PC/                     # Windows Executable
-├── Code/                       # Source Code
-│   ├── Server/                 # Python code running on the Raspberry Pi
-│   │   ├── main.py             # Main Entry Point
-│   │   ├── Action.py           # Movement Sequences (Walk, Sit, etc.)
-│   │   ├── Control.py          # Logic for processing Client commands
-│   │   ├── PCA9685.py          # PWM Driver for Servos
-│   │   └── Ultrasonic.py       # Distance sensing logic
-│   └── Client/                 # Source code for PC/Mobile interfaces
-├── Media/                      # Project images, videos, and diagrams
-├── Docs/                       # University reports and assembly guides
-└── README.md                   # Project documentation
-```
----
 
 ## 🚀 Installation & Setup
 To run the project from the source code, you need to set up both the Raspberry Pi (Server) and your Windows Computer (Client).
