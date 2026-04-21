@@ -61,3 +61,25 @@ Reboot your Raspberry Pi after the script finishes.
 
 ---
 
+## 🔧 Assembly & Calibration
+**CRITICAL**: Before fully assembling the PiCat frame, you must calibrate the servos to avoid mechanical damage.
+**1. Connect servos to the Shield.**
+**2. Run the calibration command to set all motors to 90 degrees:**
+```bash
+python Servo.py 90
+```
+**3. Attach the legs and frame parts once the servos are locked at 90°.**
+
+---
+
+## 🧪 Module Testing
+Before running the full system, test each hardware unit individually:
+
+* Test Ultrasonic: ```bash sudo python Ultrasonic.py ```
+
+* Test Servos: ```bash sudo python Servo.py ```
+
+* Test Battery: ```bash sudo python ADS7830.py ```
+
+---
+
