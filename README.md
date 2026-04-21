@@ -52,8 +52,8 @@ To run the project from the source code, you need to set up both the Raspberry P
 ### Part 1: Raspberry Pi Setup (The Server)
 **1. Clone the Repo:**
 ```bash
-git clone [https://github.com/YourUsername/PiCat.git](https://github.com/YourUsername/PiCat.git)
-cd PiCat/Code/Server
+git clone [https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_Raspberry_Pi.git](https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_Raspberry_Pi.git)
+cd Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
 
 ```
 * **2.Automated Library Installation:**
@@ -70,8 +70,7 @@ Note: This section is for modifying or running the client interface directly via
 **1. Install Required Libraries:**
 Open Command Prompt (cmd) on your Windows PC, navigate to the cloned repository, and run the setup script to install PyQt5, opencv, numpy, and other dependencies:
 ```bash
-cd path\to\PiCat\Code
-```
+cd path\to\Freenove_Robot_Dog_Kit_for_Raspberry_Pi\Code```
 ```bash
 python setup_windows.py
 ```
@@ -127,7 +126,7 @@ PiCat operates on a Client-Server architecture. You can start the server manuall
 **Method A: Direct Terminal / SSH**
 Run the following on your Raspberry Pi:
 ```bash
-cd PiCat/Code/Server
+cd ~/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server
 sudo python main.py
 ```
 ---
@@ -163,9 +162,10 @@ To make PiCat completely standalone, you can configure the Raspberry Pi to start
    ```bash
 
    #!/bin/sh
-   cd "/home/pi/PiCat/Code/Server"
+   cd "/home/pi/Freenove_Robot_Dog_Kit_for_Raspberry_Pi/Code/Server"
    pwd
    sleep 10
+   sudo cp point.txt /home/pi
    sudo python main.py -t -n
    ```
    (Press Ctrl+O, Enter to save, then Ctrl+X to exit).
@@ -206,8 +206,8 @@ Once the Raspberry Pi restarts, PiCat will automatically wake up and wait for cl
 ## 📥 Quick Download (Ready to Run)
 If you want to start controlling **PiCat** immediately without setting up the source code environment, download the pre-compiled applications:
 
-* **📱 Mobile App (Android):** [Download PiCat_Controller](https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove)
-* **📱 Mobile App (ios):** [Download PiCat_Controller](https://apps.apple.com/us/app/freenove/id1523264732)
+* **📱 Mobile App (Android):** [Download PiCat_Controller (Freenove app)](https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove)
+* **📱 Mobile App (ios):** [Download PiCat_Controller (Freenove app)](https://apps.apple.com/us/app/freenove/id1523264732)
 ---
 
 ## 🤝 Acknowledgments
