@@ -185,25 +185,25 @@ sudo nano start.sh
    Create the autostart directory and file:
    ```bash
    mkdir -p ~/.config/autostart/
-sudo nano ~/.config/autostart/start.desktop
+   sudo nano ~/.config/autostart/start.desktop
    ```
 
 5. Add the desktop entry configuration:
    ```bash
-[Desktop Entry]
-Type=Application
-Name=PiCat_Server
-NoDisplay=true
-Exec=/home/pi/start.sh
+   [Desktop Entry]
+   Type=Application
+   Name=PiCat_Server
+   NoDisplay=true
+   Exec=/home/pi/start.sh
    ```
 
-(Press Ctrl+O, Enter to save, then Ctrl+X to exit).
+   (Press Ctrl+O, Enter to save, then Ctrl+X to exit).
 
 6. Apply permissions and Reboot:
-```bash
+   ```bash
    sudo chmod +x ~/.config/autostart/start.desktop
-sudo reboot
-```
+   sudo reboot
+   ```
 Once the Raspberry Pi restarts, PiCat will automatically wake up and wait for client connection!
 
 ---
