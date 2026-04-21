@@ -6,13 +6,6 @@
 
 ---
 
-## 📥 Quick Download (Ready to Run)
-If you want to start controlling **PiCat** immediately without setting up the source code environment, download the pre-compiled applications:
-
-* **📱 Mobile App (Android):** [Download PiCat_Controller](https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove)
-* **📱 Mobile App (ios):** [Download PiCat_Controller](https://apps.apple.com/us/app/freenove/id1523264732)
----
-
 ## 🌟 Features & Functions
 PiCat is packed with dynamic movements and smart capabilities powered by the Raspberry Pi and onboard sensors.
 
@@ -208,6 +201,13 @@ Once the Raspberry Pi restarts, PiCat will automatically wake up and wait for cl
 
 ![client and app image](media/client.webp)
 
+---
+
+## 📥 Quick Download (Ready to Run)
+If you want to start controlling **PiCat** immediately without setting up the source code environment, download the pre-compiled applications:
+
+* **📱 Mobile App (Android):** [Download PiCat_Controller](https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove)
+* **📱 Mobile App (ios):** [Download PiCat_Controller](https://apps.apple.com/us/app/freenove/id1523264732)
 ---
 
 ## 🤝 Acknowledgments
