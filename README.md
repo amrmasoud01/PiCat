@@ -83,3 +83,22 @@ Before running the full system, test each hardware unit individually:
 
 ---
 
+## 🎮 How to Control PiCat
+PiCat operates on a Client-Server architecture.
+**1. Start the Server (The Cat)**
+Run the following on your Raspberry Pi:
+```bash
+sudo python main.py
+ ```
+The server will start and display the IP address of the Pi.
+
+**2. Connect the Client (Remote)**
+* **Via PC:** Open the PC GUI, enter the Pi's IP address, and click Connect.
+
+* **Via Mobile:** Open the PiCat App, enter the IP, and use the on-screen joysticks to move.
+
+---
+
+## 🤝 Acknowledgments
+* Inspired by the Freenove Robot Dog Kit.
+* Developed as a University Project for sustainable robotics exploration.
