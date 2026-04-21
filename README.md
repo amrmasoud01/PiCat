@@ -183,19 +183,19 @@ sudo nano start.sh
    ```
 4. Set up Desktop Autostart:
    Create the autostart directory and file:
-```bash
+   ```bash
    mkdir -p ~/.config/autostart/
 sudo nano ~/.config/autostart/start.desktop
-```
+   ```
 
 5. Add the desktop entry configuration:
-```bash
+   ```bash
 [Desktop Entry]
 Type=Application
 Name=PiCat_Server
 NoDisplay=true
 Exec=/home/pi/start.sh
-```
+   ```
 
 (Press Ctrl+O, Enter to save, then Ctrl+X to exit).
 
