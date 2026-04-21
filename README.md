@@ -1,6 +1,6 @@
 # 🐈‍⬛ PiCat: The Raspberry Pi Robotic Cat
 
-![PiCat Cover Image](Media/picat_cover.jpg)
+![PiCat Cover Image](media/picat_cover.jpeg)
 
 **PiCat** is an advanced, open-source quadruped robotic cat built for a university project. It is based on the Freenove Robot Dog kit architecture but customized into a feline form factor. The project integrates hardware engineering, real-time control via Python, and cross-platform remote operation.
 
