@@ -128,18 +128,81 @@ Before running the full system, test each hardware unit individually:
 ---
 
 ## 🎮 How to Control PiCat
-PiCat operates on a Client-Server architecture.
-**1. Start the Server (The Cat)**
+PiCat operates on a Client-Server architecture. You can start the server manually or configure it to run automatically on boot.
+
+### 1. Start the Server (The Cat)
+**Method A: Direct Terminal / SSH**
 Run the following on your Raspberry Pi:
 ```bash
+cd PiCat/Code/Server
 sudo python main.py
- ```
-The server will start and display the IP address of the Pi.
+```
+---
+* **Tip:** To run the server without the GUI interface and enable TCP communication (Headless Mode), use:
+```bash sudo python main.py -t -n ```
 
-**2. Connect the Client (Remote)**
+---
+
+**Method B: Remote Desktop via VNC Viewer**
+If you prefer a graphical interface to interact with the Raspberry Pi:
+1. Download and install VNC Viewer on your PC.
+2. Open VNC Viewer -> File -> New Connection.
+3. Enter the IP address of your Raspberry Pi and a name (e.g., PiCat).
+4. Connect and log in (Default Username: pi, Password: raspberry).
+5. Open the terminal and run the commands from Method A.
+
+### 2. 2. Connect the Client (Remote)
 * **Via PC:** Open the PC GUI, enter the Pi's IP address, and click Connect.
-
 * **Via Mobile:** Open the PiCat App, enter the IP, and use the on-screen joysticks to move.
+---
+
+### 🔄 Advanced: Server Auto-Start (Recommended)
+To make PiCat completely standalone, you can configure the Raspberry Pi to start the server automatically as soon as it powers on.
+1. Create a startup script:
+Open the terminal on your Raspberry Pi and run:
+```bash
+cd ~
+sudo touch start.sh
+sudo nano start.sh
+```
+2. Add the executable code:
+   Copy and paste the following into the nano editor:
+   ```bash
+
+   #!/bin/sh
+   cd "/home/pi/PiCat/Code/Server"
+   pwd
+   sleep 10
+   sudo python main.py -t -n
+   ```
+   (Press Ctrl+O, Enter to save, then Ctrl+X to exit).
+
+3. Make the script executable:
+   ```bash
+   sudo chmod 777 start.sh
+   ```
+4. Set up Desktop Autostart:
+   Create the autostart directory and file:
+   ```bash
+   mkdir -p ~/.config/autostart/
+sudo nano ~/.config/autostart/start.desktop
+```
+5. Add the desktop entry configuration:
+   ```bash
+[Desktop Entry]
+Type=Application
+Name=PiCat_Server
+NoDisplay=true
+Exec=/home/pi/start.sh
+```
+(Press Ctrl+O, Enter to save, then Ctrl+X to exit).
+
+6. Apply permissions and Reboot:
+      ```bash
+   sudo chmod +x ~/.config/autostart/start.desktop
+sudo reboot
+```
+Once the Raspberry Pi restarts, PiCat will automatically wake up and wait for client connection!
 
 ---
 
