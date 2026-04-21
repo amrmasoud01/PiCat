@@ -9,9 +9,8 @@
 ## 📥 Quick Download (Ready to Run)
 If you want to start controlling **PiCat** immediately without setting up the source code environment, download the pre-compiled applications:
 
-* **📱 Mobile App (Android):** [Download PiCat_Controller.apk](Apps/Mobile/PiCat_Controller.apk)
-* **💻 Desktop Controller (Windows):** [Download PiCat_Desktop.exe](Apps/PC/PiCat_Desktop.exe)
-
+* **📱 Mobile App (Android):** [Download PiCat_Controller](https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove)
+* **📱 Mobile App (ios):** [Download PiCat_Controller](https://apps.apple.com/us/app/freenove/id1523264732)
 ---
 
 ## 🌟 Features & Functions
@@ -76,11 +75,14 @@ PiCat/
 ---
 
 ## 🚀 Installation & Setup
+To run the project from the source code, you need to set up both the Raspberry Pi (Server) and your Windows Computer (Client).
 
-* **1.Clone the Repo:**
+### Part 1: Raspberry Pi Setup (The Server)
+**1. Clone the Repo:**
 ```bash
 git clone [https://github.com/YourUsername/PiCat.git](https://github.com/YourUsername/PiCat.git)
 cd PiCat/Code/Server
+
 ```
 * **2.Automated Library Installation:**
 The project requires I2C and specific Python libraries. Run the setup script provided:
@@ -88,6 +90,39 @@ The project requires I2C and specific Python libraries. Run the setup script pro
 sudo python setup.py
 ```
 Reboot your Raspberry Pi after the script finishes.
+
+---
+
+### Part 2: Windows PC Client Setup (Run from Source)
+Note: This section is for modifying or running the client interface directly via Python on Windows. Ensure Python 3 is installed on your PC first.
+**1. Install Required Libraries:**
+Open Command Prompt (cmd) on your Windows PC, navigate to the cloned repository, and run the setup script to install PyQt5, opencv, numpy, and other dependencies:
+```bash
+cd path\to\PiCat\Code
+```
+```bash
+python setup_windows.py
+```
+(Wait for the message "All libraries installed successfully". If network errors occur, simply run the command again).
+
+**2. Open the Client Interface:**
+Once the libraries are installed, navigate to the Client directory and run the main script:
+```bash
+cd Client
+```
+```bash
+python Main.py
+```
+
+**3. Connect and Calibrate:**
+
+1. Turn on the Raspberry Pi and ensure the server is running.
+
+2. Enter the Raspberry Pi's IP address in the white IP edit box on the Client GUI.
+
+3. Click Connect.
+
+* **Important:** After connecting, navigate to the Calibration section to calibrate the robot dog before attempting any movement.
 
 ---
 
