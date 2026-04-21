@@ -51,12 +51,12 @@ PiCat/
 ```bash
 git clone [https://github.com/YourUsername/PiCat.git](https://github.com/YourUsername/PiCat.git)
 cd PiCat/Code/Server
-
+```
 * **2.Automated Library Installation:**
 The project requires I2C and specific Python libraries. Run the setup script provided:
 ```bash
 sudo python setup.py
-
+```
 Reboot your Raspberry Pi after the script finishes.
 
 ---
