@@ -206,7 +206,7 @@ To make PiCat completely standalone, you can configure the Raspberry Pi to start
    ```
 Once the Raspberry Pi restarts, PiCat will automatically wake up and wait for client connection!
 
-![client and app image](media/client-and-app.webp)
+![client and app image](media/client.webp)
 
 ---
 
