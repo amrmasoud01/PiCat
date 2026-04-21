@@ -1,39 +1,63 @@
-# 🐈‍⬛ Bastet-ROS (PiCat)
+# 🐈‍⬛ PiCat: The Raspberry Pi Robotic Cat
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![ROS Version](https://img.shields.io/badge/ROS-Noetic%20%7C%20Humble-green.svg)
-![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red.svg)
+![PiCat Cover Image](Media/picat_cover.jpg)
 
-> An open-source, Egyptian-themed quadruped robotic cat powered by Raspberry Pi and ROS (Robot Operating System). Designed for exploring advanced kinematics, balancing algorithms, and distributed systems.
+**PiCat** is an advanced, open-source quadruped robotic cat built for a university project. It is based on the Freenove Robot Dog kit architecture but customized into a feline form factor. The project integrates hardware engineering, real-time control via Python, and cross-platform remote operation.
 
-<p align="center">
-  <img src="https://via.placeholder.com/600x400?text=Upload+Your+Robot+Image+Here" alt="Bastet-ROS Robot" width="500"/>
-</p>
+---
 
-## ✨ Key Features
+## 📥 Quick Download (Ready to Run)
+If you want to start controlling **PiCat** immediately without setting up the source code environment, download the pre-compiled applications:
 
-* **Custom Egyptian Chassis:** A unique laser-cut frame featuring the *Ankh* (Key of Life) and feline motifs, combining ancient art with modern robotics.
-* **High Processing Power:** Driven by a Raspberry Pi, providing ample compute for complex inverse kinematics and distributed node communication.
-* **ROS Integration:** Built entirely on the Robot Operating System (ROS) for a modular, scalable, and research-ready software architecture.
-* **Dynamic Movement:** Precision control over micro-servos enabling complex gaits and balancing mechanics.
+* **📱 Mobile App (Android):** [Download PiCat_Controller.apk](Apps/Mobile/PiCat_Controller.apk)
+* **💻 Desktop Controller (Windows):** [Download PiCat_Desktop.exe](Apps/PC/PiCat_Desktop.exe)
 
-## 🛠️ Hardware Bill of Materials (BOM)
+---
 
-* **Main Brain:** Raspberry Pi (3B+ or 4 recommended)
-* **Actuators:** Micro-Servo Motors (e.g., TowerPro SG90)
-* **Power Management:** Custom Servo Shield / Power Distribution Board
-* **Energy:** Rechargeable Li-ion batteries
-* **Chassis:** Custom laser-cut wood/acrylic frame
+## 🛠️ Hardware Components
+* **Controller:** Raspberry Pi (3B+ / 4 Recommended)
+* **Shield:** Freenove Robot Shield for Raspberry Pi
+* **Actuators:** 13x Servo Motors (Legs and Head movement)
+* **Sensors:** Ultrasonic Sensor (Distance), MPU6050 (Balance), Battery Voltage Monitor (ADC)
+* **Power:** 2x 18650 Li-ion Batteries
 
-## 💻 Software Stack
+---
 
-* **Operating System:** Ubuntu (Linux)
-* **Middleware:** ROS (Robot Operating System)
-* **Programming Languages:** Python 3 & C++
+## 📂 Repository Structure
+We have organized the repository to be clean and modular, focusing on the essential files for operation:
 
-## 🚀 Getting Started
+```text
+PiCat/
+├── Apps/                       # Pre-compiled binaries for immediate use
+│   ├── Mobile/                 # Android APK
+│   └── PC/                     # Windows Executable
+├── Code/                       # Source Code
+│   ├── Server/                 # Python code running on the Raspberry Pi
+│   │   ├── main.py             # Main Entry Point
+│   │   ├── Action.py           # Movement Sequences (Walk, Sit, etc.)
+│   │   ├── Control.py          # Logic for processing Client commands
+│   │   ├── PCA9685.py          # PWM Driver for Servos
+│   │   └── Ultrasonic.py       # Distance sensing logic
+│   └── Client/                 # Source code for PC/Mobile interfaces
+├── Media/                      # Project images, videos, and diagrams
+├── Docs/                       # University reports and assembly guides
+└── README.md                   # Project documentation
 
-### Prerequisites
-Ensure your Raspberry Pi is running Ubuntu and has ROS installed. 
+---
 
+## 🚀 Installation & Setup
+
+**1.Clone the Repo:**
+```bash
+git clone [https://github.com/YourUsername/PiCat.git](https://github.com/YourUsername/PiCat.git)
+cd PiCat/Code/Server
+
+**2.Automated Library Installation:**
+The project requires I2C and specific Python libraries. Run the setup script provided:
+```bash
+sudo python setup.py
+
+Reboot your Raspberry Pi after the script finishes.
+
+---
 
