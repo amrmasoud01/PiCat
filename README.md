@@ -159,12 +159,12 @@ If you prefer a graphical interface to interact with the Raspberry Pi:
 ### 🔄 Advanced: Server Auto-Start (Recommended)
 To make PiCat completely standalone, you can configure the Raspberry Pi to start the server automatically as soon as it powers on.
 1. Create a startup script:
-Open the terminal on your Raspberry Pi and run:
-```bash
-cd ~
-sudo touch start.sh
-sudo nano start.sh
-```
+   Open the terminal on your Raspberry Pi and run:
+   ```bash
+   cd ~
+   sudo touch start.sh
+   sudo nano start.sh
+   ```
 2. Add the executable code:
    Copy and paste the following into the nano editor:
    ```bash
